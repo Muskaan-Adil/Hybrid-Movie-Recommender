@@ -3,7 +3,7 @@ import requests
 TMDB_API_KEY = "0f69e89b1f60756123aaaad6b5e448de"
 
 def get_poster(movie_title):
-    url = f"https://api.themoviedb.org/3/search/movie"
+    url = "https://api.themoviedb.org/3/search/movie"
     params = {"api_key": TMDB_API_KEY, "query": movie_title}
     response = requests.get(url, params=params)
     if response.status_code == 200:
