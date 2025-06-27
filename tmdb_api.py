@@ -1,6 +1,6 @@
 import requests
 
-TMDB_API_KEY = "YOUR_TMDB_API_KEY"
+TMDB_API_KEY = "0f69e89b1f60756123aaaad6b5e448de"
 
 def get_poster(movie_title):
     url = f"https://api.themoviedb.org/3/search/movie"
