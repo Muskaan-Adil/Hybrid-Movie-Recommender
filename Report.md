@@ -1,7 +1,3 @@
-Perfect — using that exact structured style, here’s a **detailed report** for your *Hybrid Movie Recommendation System*:
-
----
-
 # Detailed Report – Hybrid Movie Recommendation System
 
 ## 1. Data Loading & Initial Exploration
@@ -104,9 +100,3 @@ This project demonstrates the effectiveness of combining Collaborative Filtering
 * Explore more advanced hybrid models using matrix factorization or neural recommenders
 
 The final hybrid pipeline offers a robust and flexible foundation for real-world movie recommendation systems.
-
----
-
-If you want, I can **package this into a proper README-style markdown** for your GitHub as well — just say:
-
-> *“yes, package it for GitHub”* 🚀
