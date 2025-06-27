@@ -76,7 +76,6 @@ To make the project cloud-friendly:
 ## 6. Visual Summary
 
 * The Streamlit dashboard displays a clean user dropdown, a “Get Recommendations” button, and a row of posters for the recommended movies.
-* A success/warning spinner informs the user about whether the models are being trained or loaded from cache.
 * Posters and movie titles are arranged in a simple row of columns for readability.
 
 ---
