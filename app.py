@@ -11,20 +11,14 @@ st.title("🎬 Hybrid Movie Recommendation System")
 with st.spinner("Loading data and models..."):
     movies_df, ratings_df, users_df = load_data()
 
-    # check if models are already trained
     if os.path.exists("user_item_matrix.pkl") and os.path.exists("user_similarity.pkl") and os.path.exists("cbf_sim.pkl"):
-        # just load them
         with open("user_item_matrix.pkl", "rb") as f:
             user_item_matrix = pickle.load(f)
         with open("user_similarity.pkl", "rb") as f:
             user_similarity = pickle.load(f)
         with open("cbf_sim.pkl", "rb") as f:
             cbf_sim = pickle.load(f)
-        st.success("Models loaded from pickle files.")
     else:
-        # train from scratch
-        st.warning("No saved models found, training from scratch...")
-
         user_item_matrix, user_similarity = train_cf_model(ratings_df)
         cbf_sim = train_cbf_model(movies_df)
 
@@ -35,7 +29,6 @@ with st.spinner("Loading data and models..."):
         with open("cbf_sim.pkl", "wb") as f:
             pickle.dump(cbf_sim, f)
 
-        st.success("Training finished and models saved!")
 
 user_ids = users_df['UserID'].unique().tolist()
 selected_user = st.selectbox("Choose a User ID", user_ids)
