@@ -49,6 +49,6 @@ if st.button("Get Recommendations"):
             st.markdown(f"**{movie}**")
             poster = get_poster(movie)
             if poster:
-                st.image(poster, use_column_width=True)
+                st.image(poster, use_container_width=True)
             else:
                 st.write("No poster found.")
