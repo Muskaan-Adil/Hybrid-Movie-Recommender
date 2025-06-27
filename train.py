@@ -17,4 +17,4 @@ with open("user_similarity.pkl", "wb") as f:
 with open("cbf_sim.pkl", "wb") as f:
     pickle.dump(cbf_sim, f)
 
-print("✅ Models trained and saved.")
+print("✅ Models trained and saved as .pkl")
