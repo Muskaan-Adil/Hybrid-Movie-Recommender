@@ -1,5 +1,4 @@
 # Hybrid Movie Recommendation System – Streamlit Deployment
----
 
 ## Project Overview
 
@@ -18,7 +17,13 @@ This project demonstrates how to build a real-world recommender by merging colla
 * **TMDb Poster Integration**: Fetches high-quality movie posters using the TMDb API.
 * **Streamlit Deployment**: Presents a responsive UI with user selection, recommendations, and posters.
 * **Model Persistence**: Stores trained similarity matrices as pickle files for faster reloads.
-* **Self-Healing Training**: Automatically trains models on first deploy if pickles are missing.
+* **Self-Healing Training**: Automatically trains models on first deploy if pickles are missing, supporting easy cloud redeployment.
+
+---
+
+## Demo
+
+👉 [**Click here to try the live app on Streamlit Cloud**](https://hybrid-movie-recommender-system.streamlit.app/)
 
 ---
 
@@ -97,9 +102,9 @@ This project demonstrates how to build a real-world recommender by merging colla
 
 *(if you wish to expand in future)*
 
-* You can add collaborative similarity heatmaps.
-* Genre frequency histograms.
-* User demographic distributions.
+* Collaborative similarity heatmaps
+* Genre frequency histograms
+* User demographic distributions
 
 ---
 
