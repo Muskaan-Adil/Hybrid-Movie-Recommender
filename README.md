@@ -110,4 +110,4 @@ This project demonstrates how to build a real-world recommender by merging colla
 
 ## Report
 
-For more details about the hybrid recommendation logic, data transformation steps, and future enhancements, please refer to **HybridMovieRec\_Report.md**.
+For more details about the hybrid recommendation logic, data transformation steps, and future enhancements, please refer to [**Report.md**](Report.md).
