@@ -38,7 +38,6 @@ def train_cbf_model(movies_df):
     return cosine_sim
 
 def hybrid_recommendations(user_id, user_item_matrix, user_similarity, cbf_sim, movies_df, ratings_df, top_n=10):
-    # Collaborative filtering part
     user_idx = user_id - 1  # assuming UserIDs are 1-indexed
     similar_users = user_similarity[user_idx]
     weighted_ratings = similar_users @ user_item_matrix
